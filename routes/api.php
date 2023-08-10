@@ -26,3 +26,4 @@ Route::get('/hello', function () {
 });
 
 Route::get('/users',  [MockupController::class, 'users']);
+Route::get('/provincias',  [MockupController::class, 'provincias']);
