@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Provincias;
 use Illuminate\Http\Request;
 
 class MockupController extends Controller
@@ -412,5 +413,10 @@ class MockupController extends Controller
         ];
 
         return response()->json($users);
+    }
+
+    public function provincias(){
+        $provincias = Provincias::all();
+        return response()->json($provincias);
     }
 }
