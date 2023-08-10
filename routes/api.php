@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MockupController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,5 @@ Route::get('/hello', function () {
         'data' => "hello"
     ]);
 });
+
+Route::get('/users',  [MockupController::class, 'users']);
